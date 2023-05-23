@@ -1,3 +1,8 @@
+import twitter from '../image/twitter.png';
+import instagram from '../image/instagram.png';
+import linkedin from '../image/linkedin.png';
+import github from '../image/github.png';
+
 const socialData=[
 	{
 		id:'linkedin',
