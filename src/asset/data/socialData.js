@@ -1,0 +1,23 @@
+const socialData=[
+	{
+		id:'linkedin',
+		image: linkedin,
+		url:'https://www.linkedin.com/in/semih-e-b60a2a18/'
+	},
+	{
+		id:'github',
+		image: github,
+		url:'https://github.com/semiherd'
+	},
+	{
+		id:'instagram',
+		image:instagram,
+		url:'https://instagram.com/semiherdgan'
+	},
+	{
+		id:'twitter',
+		image:twitter,
+		url:'https://twitter.com/semiherdogan'
+	},
+]
+export default socialData;
