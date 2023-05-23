@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/me/static/css/main.764862e1.css",
+    "main.js": "/me/static/js/main.36db2c2a.js",
+    "static/js/787.dc9ee2bf.chunk.js": "/me/static/js/787.dc9ee2bf.chunk.js",
+    "static/media/project1.png": "/me/static/media/project1.1b88216f1a5e89f22a5f.png",
+    "static/media/project2.png": "/me/static/media/project2.78593b900068da4331f6.png",
+    "static/media/project3.png": "/me/static/media/project3.1b2ee3cb0d4fb080b2c9.png",
+    "static/media/lovetolearn.jpg": "/me/static/media/lovetolearn.7289474eb5a4c14f58f6.jpg",
+    "static/media/Foto.jpg": "/me/static/media/Foto.42f17b01f8492e530e87.jpg",
+    "static/media/workanywhere.jpg": "/me/static/media/workanywhere.a759023c6a78ed5fc1eb.jpg",
+    "static/media/codehappy.jpg": "/me/static/media/codehappy.77f3fbe6017af7c9aac6.jpg",
+    "static/media/dosthgreat.jpg": "/me/static/media/dosthgreat.2c7ccfd7e4581367d6d7.jpg",
+    "static/media/laptop.jpg": "/me/static/media/laptop.7ee0ae18920aed22f2d6.jpg",
+    "static/media/AvenirRegular.ttf": "/me/static/media/AvenirRegular.b58b1b9c574d4cabb0ab.ttf",
+    "static/media/instagram.png": "/me/static/media/instagram.4438413218c1c296b1b2.png",
+    "index.html": "/me/index.html",
+    "main.764862e1.css.map": "/me/static/css/main.764862e1.css.map",
+    "main.36db2c2a.js.map": "/me/static/js/main.36db2c2a.js.map",
+    "787.dc9ee2bf.chunk.js.map": "/me/static/js/787.dc9ee2bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.764862e1.css",
+    "static/js/main.36db2c2a.js"
+  ]
+}
