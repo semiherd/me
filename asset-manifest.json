@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.56f0cda9.css",
-    "main.js": "/me/static/js/main.1cb709ee.js",
+    "main.css": "/me/static/css/main.5849b70d.css",
+    "main.js": "/me/static/js/main.ce4906d2.js",
     "static/js/787.dc9ee2bf.chunk.js": "/me/static/js/787.dc9ee2bf.chunk.js",
     "static/media/project1.png": "/me/static/media/project1.1b88216f1a5e89f22a5f.png",
+    "static/media/Foto2.jpeg": "/me/static/media/Foto2.8476bb02cac2b79943f0.jpeg",
     "static/media/laptop2.jpg": "/me/static/media/laptop2.0b27371f874bcd3351dc.jpg",
     "static/media/project2.png": "/me/static/media/project2.78593b900068da4331f6.png",
     "static/media/project3.png": "/me/static/media/project3.1b2ee3cb0d4fb080b2c9.png",
     "static/media/lovetolearn.jpg": "/me/static/media/lovetolearn.7289474eb5a4c14f58f6.jpg",
     "static/media/ideaintoreality.jpg": "/me/static/media/ideaintoreality.5e8af2a1adfb11f415ff.jpg",
-    "static/media/Foto.jpg": "/me/static/media/Foto.42f17b01f8492e530e87.jpg",
     "static/media/workanywhere.jpg": "/me/static/media/workanywhere.a759023c6a78ed5fc1eb.jpg",
     "static/media/data.jpg": "/me/static/media/data.215bff073ed66966d40c.jpg",
     "static/media/codehappy.jpg": "/me/static/media/codehappy.77f3fbe6017af7c9aac6.jpg",
@@ -19,12 +19,12 @@
     "static/media/AvenirRegular.ttf": "/me/static/media/AvenirRegular.b58b1b9c574d4cabb0ab.ttf",
     "static/media/instagram.png": "/me/static/media/instagram.4438413218c1c296b1b2.png",
     "index.html": "/me/index.html",
-    "main.56f0cda9.css.map": "/me/static/css/main.56f0cda9.css.map",
-    "main.1cb709ee.js.map": "/me/static/js/main.1cb709ee.js.map",
+    "main.5849b70d.css.map": "/me/static/css/main.5849b70d.css.map",
+    "main.ce4906d2.js.map": "/me/static/js/main.ce4906d2.js.map",
     "787.dc9ee2bf.chunk.js.map": "/me/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56f0cda9.css",
-    "static/js/main.1cb709ee.js"
+    "static/css/main.5849b70d.css",
+    "static/js/main.ce4906d2.js"
   ]
 }
