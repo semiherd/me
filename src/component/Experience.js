@@ -11,7 +11,7 @@ const WorkItem= ({data}) => {
 				</div>
 				<div>
 					{data?.start && <h1>{data.start}</h1>}
-					{data?.start &&<h1>-</h1>}
+					{data?.start &&<h1> - </h1>}
 					{data?.end && <h1>{data.end}</h1>}
 					{data?.start && !data?.end && <h1>Current</h1>}
 				</div>
@@ -29,7 +29,7 @@ const Experience= () => {
 	
 	return (
 		<div className="experience">
-			<img src={laptop} />
+			<img src={laptop} alt="laptop" />
 			{experienceData.map((item,index) => <WorkItem key={index.toString()} data={item} />)}
 		</div>
 	)

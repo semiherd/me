@@ -1,7 +1,7 @@
 import workanywhere from '../asset/image/workanywhere.jpg';
 
 const keyRoles=[
-	'Multi-disciplined competencies by combining both business skills and technical skills',
+	'Multi-disciplined competencies by combining both business and technical skills',
 	'Experience on Leading Digitalization and Agile Software Development'
 ]
 const profile='BS of Science on Industrial Engineering, with 10 years of experience on Digital Transformation, Data Analysis and Frontend Development.'

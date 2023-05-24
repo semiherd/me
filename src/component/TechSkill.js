@@ -1,8 +1,12 @@
 import techskillData from '../asset/data/techskillData';
 import lovetolearn from '../asset/image/lovetolearn.jpg';
 import codehappy from '../asset/image/codehappy.jpg';
+import everyonecancode from '../asset/image/everyonecancode.jpg';
+import ideaintoreality from '../asset/image/ideaintoreality.jpg';
+import data from '../asset/image/data.jpg';
+import laptop2 from '../asset/image/laptop2.jpg';
 
-const images= [lovetolearn,codehappy,lovetolearn,codehappy,lovetolearn]
+const images= [ideaintoreality,data,laptop2,everyonecancode,lovetolearn]
 const Skill= ({data}) => {
 	return (
 		<div className="skill-item">

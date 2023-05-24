@@ -3,7 +3,7 @@ const experienceData=[
 		company: 'Freelance',
 		start: 'January 2022',
 		end: null,
-		role: 'Frontend Developer',
+		role: 'Frontend-Developer',
 		duration: '1.5 years',
 		intro: [
 			'Developing frontend design on ReactJs/Native',
@@ -15,7 +15,7 @@ const experienceData=[
 		company: 'Intertech AS',
 		start: 'May 2021',
 		end: 'November 2021',
-		role: 'Senior Analyst',
+		role: 'Senior-Analyst',
 		duration: '6 months',
 		intro: [
 			'Realised integration of several financial legal reports on agile environment',
@@ -28,7 +28,7 @@ const experienceData=[
 		company: 'Siemens AG',
 		start: 'May 2017',
 		end: 'May 2021',
-		role: 'Digitalization Consultant',
+		role: 'Digitalization-Consultant',
 		duration: '4 years',
 		intro: [
 			'Leaded projects within digitalization of supply chain processes',
@@ -42,7 +42,7 @@ const experienceData=[
 		company: 'Siemens AG',
 		start: 'May 2013',
 		end: 'May 2017',
-		role: 'Planning Engineer',
+		role: 'Planning-Engineer',
 		duration: '4 years',
 		intro: [
 			'Responsible for management of a cost effective production and capacity plan @Siemens Gebze',
