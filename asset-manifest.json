@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/me/static/css/main.5849b70d.css",
-    "main.js": "/me/static/js/main.ce4906d2.js",
+    "main.js": "/me/static/js/main.8ca277a0.js",
     "static/js/787.dc9ee2bf.chunk.js": "/me/static/js/787.dc9ee2bf.chunk.js",
     "static/media/project1.png": "/me/static/media/project1.1b88216f1a5e89f22a5f.png",
     "static/media/Foto2.jpeg": "/me/static/media/Foto2.8476bb02cac2b79943f0.jpeg",
@@ -12,7 +12,6 @@
     "static/media/ideaintoreality.jpg": "/me/static/media/ideaintoreality.5e8af2a1adfb11f415ff.jpg",
     "static/media/workanywhere.jpg": "/me/static/media/workanywhere.a759023c6a78ed5fc1eb.jpg",
     "static/media/data.jpg": "/me/static/media/data.215bff073ed66966d40c.jpg",
-    "static/media/codehappy.jpg": "/me/static/media/codehappy.77f3fbe6017af7c9aac6.jpg",
     "static/media/everyonecancode.jpg": "/me/static/media/everyonecancode.40ed6fbbd72ffcb75ba8.jpg",
     "static/media/dosthgreat.jpg": "/me/static/media/dosthgreat.2c7ccfd7e4581367d6d7.jpg",
     "static/media/laptop.jpg": "/me/static/media/laptop.7ee0ae18920aed22f2d6.jpg",
@@ -20,11 +19,11 @@
     "static/media/instagram.png": "/me/static/media/instagram.4438413218c1c296b1b2.png",
     "index.html": "/me/index.html",
     "main.5849b70d.css.map": "/me/static/css/main.5849b70d.css.map",
-    "main.ce4906d2.js.map": "/me/static/js/main.ce4906d2.js.map",
+    "main.8ca277a0.js.map": "/me/static/js/main.8ca277a0.js.map",
     "787.dc9ee2bf.chunk.js.map": "/me/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5849b70d.css",
-    "static/js/main.ce4906d2.js"
+    "static/js/main.8ca277a0.js"
   ]
 }
