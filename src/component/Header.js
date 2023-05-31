@@ -1,4 +1,4 @@
-import foto from '../asset/Foto.jpg'
+import foto from '../asset/Foto2.jpeg'
 import ContactInfo from './ContactInfo';
 
 const Header= ({activeTitle,handleNav}) => {
@@ -7,17 +7,17 @@ const Header= ({activeTitle,handleNav}) => {
 		<div className="header">
 			<div className="title-container">
 				<h4 
-					className={activeTitle==0 ? "active" : "not-active"}
+					className={activeTitle===0 ? "active" : "not-active"}
 					onClick={() => handleNav(0)}>Home</h4>
 				<h4 
-					className={activeTitle==1 ? "active" : "not-active"}
+					className={activeTitle===1 ? "active" : "not-active"}
 					onClick={() => handleNav(1)}>About</h4>
 				<h4 
-					className={activeTitle==2 ? "active" : "not-active"}
+					className={activeTitle===2 ? "active" : "not-active"}
 					onClick={() => handleNav(2)}>Portfolio</h4>
 			</div>
 			<div className="image-container">
-				<img src={foto} />
+				<img src={foto} alt="foto" />
 			</div>
 			<div className="info-container">
 				<ContactInfo />		

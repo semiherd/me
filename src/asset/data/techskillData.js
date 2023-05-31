@@ -4,7 +4,8 @@ const techskillData={
 		{text:'Scrum',level:'5'},
 		{text:'SDLC',level:'4'},
 		{text:'Test Driven Development',level:'4'},
-		{text:'Mobile First Design',level:'3'}
+		{text:'Mobile First Design',level:'3'},
+		{text:'Web3.0',level:'1'},
 	],
 	tech:[
 		{text:'Javascript',level:'6'},
@@ -30,6 +31,7 @@ const techskillData={
 		{text:'Aws DynamoDb',level:'5'},
 		{text:'Aws S3',level:'4'},
 		{text:'Tableau',level:'4'},
+		{text:'NoSql',level:'3'},
 	],
 	tool: [
 		{text:'SAP R/3',level:'5'},
@@ -39,6 +41,7 @@ const techskillData={
 		{text:'Aws Api Gateway',level:'4'},
 		{text:'Aws Appsync',level:'4'},
 		{text:'Aws Lambda',level:'4'},
+		{text:'Github',level:'3'},
 	]
 }
 export default techskillData;

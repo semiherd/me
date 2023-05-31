@@ -17,7 +17,7 @@ const AboutMe= () => {
 				<h3>Key Role</h3>
 				{keyRoles.map((i,index) => <h2 key={index.toString()}>{i}</h2>)}
 			</div>
-			<img src={workanywhere} />
+			<img src={workanywhere} alt="workanywhere" />
 		</div>	
 	)
 }

@@ -62,7 +62,7 @@ function App() {
         i.current.style.backgroundColor = colors.notSelectedBg;
         i.current.style.color = colors.notSelectedColor;                     
       
-        if(lowerCaseItem==lowerCaseRef){ 
+        if(lowerCaseItem===lowerCaseRef){ 
           response={
             ...response,
             [lowerCaseItem]:true
@@ -83,12 +83,12 @@ function App() {
 
   useEffect(() => {
     console.log('activeTitle:',activeTitle);
-    if(activeTitle==0){
+    if(activeTitle===0){
       handleMove(0)
     }
-    else if(activeTitle==1){
+    else if(activeTitle===1){
       handleMove(760)
-    }if(activeTitle==2){
+    }if(activeTitle===2){
       handleMove(1600)
     }
   },[activeTitle])
@@ -122,7 +122,7 @@ function App() {
     <div className="App">
         <Header activeTitle={activeTitle} handleNav={handleNav} />
         <Home />
-        {arrowUpVisible && <img onClick={() => handleMove(0)} className="arrow-up" src={arrowup} />}
+        {arrowUpVisible && <img alt="arrowup" onClick={() => handleMove(0)} className="arrow-up" src={arrowup} />}
         <div className={animRef.current.aboutMe? "animAboutMeIn":"animAboutMeOut"}>
           <AboutMe />
         </div>
@@ -138,9 +138,9 @@ function App() {
               onClick={() => handleTitle(portfolioRef)}>Portfolio</h3>
         </div>     
         <div className="data-container">
-            {titleState.experience==true && <Experience/>}
-            {titleState.skill==true && <TechSkill />}
-            {titleState.portfolio==true && <Portfolio />}
+            {titleState.experience===true && <Experience/>}
+            {titleState.skill===true && <TechSkill />}
+            {titleState.portfolio===true && <Portfolio />}
         </div>    
         <Footer />
     </div>

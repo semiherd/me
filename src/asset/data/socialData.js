@@ -7,7 +7,7 @@ const socialData=[
 	{
 		id:'linkedin',
 		image: linkedin,
-		url:'https://www.linkedin.com/in/semih-e-b60a2a18/'
+		url:'https://www.linkedin.com/in/semih-erdogan'
 	},
 	{
 		id:'github',

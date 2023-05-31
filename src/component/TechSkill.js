@@ -1,6 +1,5 @@
 import techskillData from '../asset/data/techskillData';
 import lovetolearn from '../asset/image/lovetolearn.jpg';
-import codehappy from '../asset/image/codehappy.jpg';
 import everyonecancode from '../asset/image/everyonecancode.jpg';
 import ideaintoreality from '../asset/image/ideaintoreality.jpg';
 import data from '../asset/image/data.jpg';
@@ -19,7 +18,7 @@ const Skill= ({data}) => {
 const SkillItem= ({title,index,data}) => {
 	return(
 		<div>
-			<img src={images[index]} />
+			<img src={images[index]} alt={images[index]} />
 			<div>
 				<h2>{title}</h2>
 				<div className="skill-items">
@@ -34,7 +33,7 @@ const TechSkill= () => {
 	const skillTitles=['Methodology','Data','Tech','Tool','Library']
 	return (
 		<div className="tech-skill">
-			<img src={lovetolearn} />
+			<img src={lovetolearn} alt="lovetolearn" />
 			<div className="skill-group">
 				{skillTitles.map((i,index) => <SkillItem key={i} index={index} title={i} data={techskillData[i.toLowerCase()]} />)}
 			</div>

@@ -9,7 +9,7 @@ const PortfolioItem= ({data}) => {
 					href={data.url} 
 					rel="noopener noreferrer" 
 					target="_blank" >{data.title}	
-					<img src={data.image} />
+					<img src={data.image} alt={data.title} />
 				</a>
 			</div>
 		</div>
@@ -19,7 +19,7 @@ const Portfolio= () => {
 	
 	return (
 		<div className="portfolio">
-			<img src={dosthgreat} />
+			<img src={dosthgreat} alt="dosthgreat" />
 			{portfolioData.map((item,index) => <PortfolioItem key={index.toString()} data={item} />)}
 		</div>
 	)

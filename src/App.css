@@ -34,7 +34,7 @@
     --lightblue: #ADD8E6;
     --turquoise: #DDD9D5;
     --headerMobileHeight: 20vh;
-    --headerTabletMiniHeight: 20vh;
+    --headerTabletMiniHeight: 25vh;
     --headerTabletHeight: 20vh;
     --headerLaptopHeight: 25vh;
     --headerDesktopHeight: 35vh;
@@ -185,6 +185,7 @@
     }
     .image-container>img{
       align-self: center;
+      object-fit: cover;
       width: 40vw;
       height: var(--headerMobileHeight);
       margin: 20% 30%;
@@ -416,10 +417,12 @@
       display:flex;
       align-self: flex-start;
     }
-    .work-item div:nth-child(1)>div h2{
-      text-align: center;
-      font-size: 1em;
-      padding: 0 2%;
+    .work-item div:nth-child(1) div:nth-child(1) h2{
+      align-self: center;
+      text-align: start;
+      padding:0 5%;
+      font-size: 0.8em;
+      width: 40vw;
     }
     .work-item div:nth-child(1) div:nth-child(2){
       display:flex;
@@ -622,6 +625,15 @@
       }
     }
   /* header */
+    .image-container>img{
+      height: var(--headerTabletMiniHeight);
+      object-fit: cover;
+      width: 30vw;
+      margin: 10% 35%;
+      border-radius: 50%;
+      border: 5px solid var(--smokewhite);
+      animation : photo 2s;
+    }
   /* title-bar-container  home-about-portfolio */
     .title-container{
       display: none;
@@ -777,6 +789,7 @@
     }
     .image-container>img{
       height: var(--headerTabletHeight);
+      object-fit: cover;
       width: 25vw;
       margin: 25% 5%;
       border-radius: 50%;
@@ -1018,6 +1031,7 @@
     }
     .image-container>img{
       height: var(--headerLaptopHeight);
+      object-fit: cover;
       width: 15vw;
       margin: 5% 5%;
       border-radius: 50%;

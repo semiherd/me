@@ -49,6 +49,27 @@ const experienceData=[
 			'Achieved reduction of workload after developing a reporting web platform  ( supply chain processes)',
 			'Developed several reporting tools using web development skills'
 		]
+	},
+	{
+		company: 'Korozo AS',
+		start: 'October 2012',
+		end: 'May 2013',
+		role: 'Method-Engineer',
+		duration: '6 months',
+		intro: [
+			'Responsible for creating monthly based productivity reports for the management',
+			'Coordinating process improvement projects with Lean Office',
+		]
+	},
+	{
+		company: 'Husqvarna AB',
+		start: 'September 2009',
+		end: 'August 2010',
+		role: 'Process-Engineer as Trainee',
+		duration: '1 year',
+		intro: [
+			'Supporting Lean Consultants and CI Experts on process improvement projects',
+		]
 	}
 ]
 export default experienceData;

@@ -11,7 +11,7 @@ const Footer= () => {
 		<div className="footer">			
 			<div>
 				{social.map((i,index) => 
-					<a key={index} data-testid={i} href={i} target="_blank" >	
+					<a key={index} data-testid={i} href={i} target="_blank" rel="noreferrer" >	
 						<img src={i} alt={i} />
 					</a>
 				)}			

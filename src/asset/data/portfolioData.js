@@ -4,8 +4,8 @@ import project3 from '../image/project3.png';
 
 const portfolioData=[
 	{
-		title: 'Mobile First Design - ReactJs Single Page App',
-		url: 'https://semiherd.github.io/digifist_interviewcase/',
+		title: 'Mobile First Design - ReactJs',
+		url: 'https://semiherd.github.io/mobilefirstdesign_digitalmarketing/',
 		image: project1,
 		portrait: false
 	},
