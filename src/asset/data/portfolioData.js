@@ -13,7 +13,7 @@ const portfolioData=[
 	},
 	{
 		title: 'Responsive Flight Search SPA - ReactJs',
-		url: 'https://semiherd.github.io/eurowings_spa_reactjs /',
+		url: 'https://semiherd.github.io/eurowings_spa_reactjs/',
 		image: project5,
 		portrait: false
 	},
