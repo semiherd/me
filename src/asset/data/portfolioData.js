@@ -18,6 +18,12 @@ const portfolioData=[
 		portrait: false
 	},
 	{
+		title: 'Animated Sidebar - ReactJs',
+		url: 'https://github.com/semiherd/reactjs_sidebar',
+		image: project8,
+		portrait: false
+	},
+	{
 		title: 'Mobile First Design - ReactJs',
 		url: 'https://semiherd.github.io/mobilefirstdesign_digitalmarketing/',
 		image: project1,
