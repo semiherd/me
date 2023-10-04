@@ -1,8 +1,9 @@
-import project1 from '../image/project1.png';
+import hoc_searchbar from '../image/hoc_searchbar.png';
 import project2 from '../image/project2.png';
 import project3 from '../image/project3.png';
 import project4 from '../image/project4.png';
 import project5 from '../image/project5.png';
+import project8 from '../image/project8.png';
 
 const portfolioData=[
 	{
@@ -24,9 +25,9 @@ const portfolioData=[
 		portrait: false
 	},
 	{
-		title: 'Mobile First Design - ReactJs',
-		url: 'https://semiherd.github.io/mobilefirstdesign_digitalmarketing/',
-		image: project1,
+		title: 'Search Bar HOC - ReactJs & TS',
+		url: 'https://codesandbox.io/s/hoc-search-bar-auto-complete-5h4cld',
+		image: hoc_searchbar,
 		portrait: false
 	},
 	{
