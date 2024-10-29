@@ -1,7 +1,7 @@
 import dosthgreat from '../asset/image/dosthgreat.jpg';
-import portfolioData from '../asset/data/portfolioData';
+import { portfolioImage, portfolioVideo } from '../asset/data/portfolioData';
 
-const PortfolioItem= ({data}) => {
+const PortfolioItem= ({data,type}) => {
 	return (
 		<div className="project-item">
 			<div className={data.portrait==true? 'image-portrait':'image-landscape'} >	
@@ -9,7 +9,12 @@ const PortfolioItem= ({data}) => {
 					href={data.url} 
 					rel="noopener noreferrer" 
 					target="_blank" >{data.title}	
-					<img src={data.image} alt={data.title} />
+					{type==='image'
+						? <img src={data.source} alt={data.title} />
+						: type==='video'
+							? <video src={data.source} width={`75%`} height={`75%`} controls></video>
+							: null
+					}
 				</a>
 			</div>
 		</div>
@@ -19,8 +24,8 @@ const Portfolio= () => {
 	
 	return (
 		<div className="portfolio">
-			<img src={dosthgreat} alt="dosthgreat" />
-			{portfolioData.map((item,index) => <PortfolioItem key={index.toString()} data={item} />)}
+			{portfolioVideo.map((item,index) => <PortfolioItem key={index.toString()} type="video" data={item} />)}
+			{portfolioImage.map((item,index) => <PortfolioItem key={index.toString()} type="image" data={item} />)}
 		</div>
 	)
 }
