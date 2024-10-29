@@ -20,7 +20,7 @@ const SkillItem= ({title,index,data}) => {
 		<div>
 			<img src={images[index]} alt={images[index]} />
 			<div>
-				<h2>{title}</h2>
+				<h2>{title}<span> in years </span></h2>
 				<div className="skill-items">
 					{data.map(item => <Skill key={item.text} data={item} />)}
 				</div>
