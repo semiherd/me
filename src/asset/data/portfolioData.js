@@ -3,9 +3,6 @@ import project3 from '../image/project3.png';
 import project4 from '../image/project4.png';
 import project5 from '../image/project5.png';
 import project8 from '../image/project8.png';
-import portfoliovideo1 from '../video/portfolio1.mov';
-import portfoliovideo2 from '../video/portfolio2.mov';
-import portfoliovideo3 from '../video/portfolio3.mov';
 
 const portfolioVideo=[
 	{
