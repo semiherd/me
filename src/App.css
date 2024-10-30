@@ -49,14 +49,14 @@
 /*initial*/
   body{
     font-family: 'AvenirRegular';
-    font-size: 15px;
+    font-size: 0.7em;
     overflow-x: hidden;
   }
   p,h1,h2,h3,h4,h5{
     text-align: flex-start;
   }
   p,a,h1{
-    font-size: 1em;
+    font-size: 0.75em;
   }
   h2{
     font-size: 1.25em;
@@ -73,6 +73,9 @@
   h6{
     font-size: 2.25em
   }
+.hidden{
+   display: none!important;
+}
 /*mobile*/
   @keyframes photo{
     0%{
@@ -177,7 +180,7 @@
       width: 100vw;
       height: 100vh;
       overflow-x: hidden;
-      background-color: var(--yellow);
+      background-color: var(--floralwhite);
     }
     .image-container{
       background-color: var(--matteblack);
@@ -271,7 +274,7 @@
       background-color: var(--tomato);
     }
     .main-container{
-      display:grid;
+      display: grid;
       grid-template-columns: repeat(3,1fr);
     }
     .main-container *{
@@ -324,7 +327,7 @@
       overflow-x: hidden;
       transform-origin: 0% 0%;  
       width: 100vw;
-      height: 100vh;
+      height: 100%;
       background-color: var(--lightgreen);
       animation: portfolio 3s;
     }
@@ -379,7 +382,15 @@
     }
     .skill-item h1:nth-child(2){
       text-align: end;
-    }   
+    } 
+    .skill-group h2>span{
+      background: #494F55;
+      color: #fff;
+      padding: 0.5%;
+      margin-left: 1%;
+      border-radius: 5%;
+      font-size: 0.35em;
+    }  
   /* experience */
     @keyframes experience{
       0%{
@@ -479,48 +490,32 @@
       }
     }
     .portfolio{
-      display:flex;
-      flex-wrap: wrap;
+      display:grid;
+      grid-auto-rows: 25vw;
+      grid-template-columns: repeat(2,40vw);
+      gap: 5vw;
       justify-content: center;
-      overflow-x: hidden;
-      transform-origin: 0% 0%;  
-      width: 100vw;
-      height: 100vh;
+      overflow-x: hidden;  
+      width: auto;
+      height: 100%;
       background-color: var(--cherry);
-      animation: portfolio 3s;
+      
     }
-    .portfolio img{
-      width: 100vw;
-      height: 40vh;
+    
+    .project-item{     
+      animation: portfolio 5s;
     }
-    .portfolio div{
-      transform: translateY(0%);
-    }
-    .project-item{
-      display:flex;
-      width: 45vw;
-      justify-content: center;
-      margin: 4% 2%;
-    }
-    .image-landscape,.image-portrait{
-      display:flex;
-    }
-    .image-portrait img{
-      width: 30vw;
-      height: 30vh;
-      border-radius: 10px;
-    }
-    .image-landscape img{
-      width: 40vw;
-      height: 20vh;
-      border-radius: 10px;
+    .project-item h1{
+      font-size: 1.5em;
+      color: ghostwhite;
+      padding: 3%;
     }
     .project-item a{
+      font-size: 1em;
       font-weight: bold;
       padding: 1%;
       text-align: center;
       text-decoration: none;
-      color: var(--white);
     }
   /*footer*/
     .footer{
@@ -688,7 +683,6 @@
     }
   /* portfolio */
     .project-item{
-      display:flex;
       justify-content: center;
       margin: 4% 2%;
     }
@@ -785,7 +779,7 @@
       width: 100vw;
       height: 100vh;
       overflow-x: hidden;
-      background-color: var(--yellow);
+      background-color: var(--floralwhite);
     }
     .image-container>img{
       height: var(--headerTabletHeight);
@@ -825,20 +819,7 @@
       font-size: 1.5em;
       color: var(--white)
     } 
-    .social-images *{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 1vw;
-      flex-wrap: wrap;
-      background-color: var(--snowwhite);
-      border: 0.1px solid var(--snowwhite);
-      border-radius: 50%;
-    }
-    .social-images a img{
-      width: 5vw;
-      height: 5vh;
-    }  
+    
   /* about me */ 
     .arrow-up{
       position: fixed;
@@ -1027,7 +1008,7 @@
       width: 100vw;
       height: 100vh;
       overflow-x: hidden;
-      background-color: var(--yellow);
+      background-color: var(--floralwhite);
     }
     .image-container>img{
       height: var(--headerLaptopHeight);
@@ -1045,7 +1026,7 @@
       top: 0%;
       width: 60vw;
       height: 100%;
-      transform: skew(-10deg);
+      transform: skew(0deg);
       border-radius: 5%;
       animation : image-container 2s;
       border-top-left-radius: 5%;
@@ -1230,29 +1211,8 @@
       align-self: center;
     }
   /* portfolio */
-    .portfolio img{
-      height: 50vh;
-    }
-    .project-item{
-      display:flex;
-      align-self:center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 40vw;
-    }
-    .image-landscape,.image-portrait{
-      display:flex;
-    }
-    .image-portrait img{
-      width: 15vw;
-      height: 40vh;
-      border-radius: 10px;
-    }
-    .image-landscape img{
-      width: 30vw;
-      height: 40vh;
-      border-radius: 10px;
-    } 
+   
+    
 }
 
 /*desktop*/
