@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.90c3148e.css",
-    "main.js": "/me/static/js/main.e21c005e.js",
+    "main.css": "/me/static/css/main.92ba2842.css",
+    "main.js": "/me/static/js/main.f6e85c35.js",
     "static/js/787.dc9ee2bf.chunk.js": "/me/static/js/787.dc9ee2bf.chunk.js",
     "static/media/project4.png": "/me/static/media/project4.b06bc03bc72316488ae3.png",
     "static/media/Foto2.jpeg": "/me/static/media/Foto2.8476bb02cac2b79943f0.jpeg",
@@ -15,19 +15,18 @@
     "static/media/workanywhere.jpg": "/me/static/media/workanywhere.a759023c6a78ed5fc1eb.jpg",
     "static/media/data.jpg": "/me/static/media/data.215bff073ed66966d40c.jpg",
     "static/media/everyonecancode.jpg": "/me/static/media/everyonecancode.40ed6fbbd72ffcb75ba8.jpg",
-    "static/media/dosthgreat.jpg": "/me/static/media/dosthgreat.2c7ccfd7e4581367d6d7.jpg",
     "static/media/laptop.jpg": "/me/static/media/laptop.7ee0ae18920aed22f2d6.jpg",
     "static/media/AvenirRegular.ttf": "/me/static/media/AvenirRegular.b58b1b9c574d4cabb0ab.ttf",
     "static/media/youtube.png": "/me/static/media/youtube.a7c9fb984327c80ac3cd.png",
     "static/media/instagram.png": "/me/static/media/instagram.4438413218c1c296b1b2.png",
     "static/media/xing.png": "/me/static/media/xing.c89e4c4ab6af2833dccd.png",
     "index.html": "/me/index.html",
-    "main.90c3148e.css.map": "/me/static/css/main.90c3148e.css.map",
-    "main.e21c005e.js.map": "/me/static/js/main.e21c005e.js.map",
+    "main.92ba2842.css.map": "/me/static/css/main.92ba2842.css.map",
+    "main.f6e85c35.js.map": "/me/static/js/main.f6e85c35.js.map",
     "787.dc9ee2bf.chunk.js.map": "/me/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90c3148e.css",
-    "static/js/main.e21c005e.js"
+    "static/css/main.92ba2842.css",
+    "static/js/main.f6e85c35.js"
   ]
 }
