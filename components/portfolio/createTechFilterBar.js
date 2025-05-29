@@ -1,4 +1,5 @@
 /* create filter-bar with tech used tabs */
+/*
 function createArrows(){
     const lefticon= createDOMElement({ type: 'div',attributes: { class : "icon" }});
     const righticon= createDOMElement({ type: 'div',attributes: { class : "icon" }});
@@ -9,7 +10,7 @@ function createArrows(){
         lefticon,righticon
     }
 }
-/*
+
 function createOptions(data){
     const optionsList= createDOMElement({ type: 'div', attributes:{ class: 'tabs'}});
     const optionElm= (option) => createDOMElement({type: 'li', attributes: { class: 'tab active'},text: option });
