@@ -132,9 +132,7 @@ function listenTechFilter(data){
         // portfolio-scrollbar
         renderElm({ parent:containerPortfolio, id: 'portfolio-scrollbar', renderFn: renderFilterScrollbar  })
         // portfolio-projects
-        console.log('projects:',projects);
         const all= projects.map(i => i.id);
-        console.log('all:',all);
         renderElm({ parent:containerPortfolio, id: 'portfolio-projects', renderFn: () => renderPortfolioProjects(all)  })
         listenTechFilter();
     }
