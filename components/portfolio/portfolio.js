@@ -159,6 +159,6 @@ function listenTechFilter(data){
         console.log('projects:',projects);
         const all= projects.map(i => i.id);
         renderElm({ parent:containerPortfolio, id: 'portfolio-projects', renderFn: () => renderPortfolioProjects(all)  })
-        listenTechFilter();
+        //listenTechFilter();
     }
 
