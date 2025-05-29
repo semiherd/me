@@ -9,7 +9,7 @@ function createArrows(){
         lefticon,righticon
     }
 }
-
+/*
 function createOptions(data){
     const optionsList= createDOMElement({ type: 'div', attributes:{ class: 'tabs'}});
     const optionElm= (option) => createDOMElement({type: 'li', attributes: { class: 'tab active'},text: option });
@@ -31,3 +31,4 @@ function createTechFilterBar(techList){
     barContainer.append(righticon);
     return barContainer;
 }
+*/
