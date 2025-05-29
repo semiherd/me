@@ -24,9 +24,10 @@ function createTechFilterBar(techList){
 }
 
 function renderFilterScrollbar(){
-    const filterBar= createTechFilterBar(techIcons);
-    filterByTechHandler(filterBar);
-    return filterBar
+    // const filterBar= createTechFilterBar(techIcons);
+    // filterByTechHandler(filterBar);
+    // return filterBar
+    return
 }
 function isClassOn(elm,className){
     return elm.classList.contains(className)
