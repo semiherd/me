@@ -13,8 +13,8 @@ function createNavButton({parent,id,label,renderFn}){
     listenHoverElm({ elm: navBut, cbover: () => showNavArrow(navBut), cbout: () => removeArrow(navBut) })
 }
 function showNavArrow(container){
-    const elm1 = createArrow(1);
-    const elm2 = createArrow(2);
+    //const elm1 = createArrow(1);
+    //const elm2 = createArrow(2);
     //container.append(elm1.elm,elm2.elm);
 }
 function listenNavButton({elm,cb}){
