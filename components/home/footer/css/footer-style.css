@@ -1,0 +1,101 @@
+.home-footer_center{
+    --all-500-animated: all 500ms ease-in-out;
+    grid-area: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.circle{
+    position: relative;
+}
+@keyframes circle-resize{
+    0%{
+        width:  var(--dimension-width-zero);
+        height: var(--dimension-height-zero);
+        opacity: 0;
+    }
+    10%{
+        width: var(--dimension-width-one);
+        height: var(--dimension-height-one);
+        opacity: var(--opacity-one);
+        top: var(--dimension-width-one);
+        left: var(--dimension-height-one);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-one),var(--skew-y-one)); */
+    }
+    20%{
+        width: var(--dimension-width-two);
+        height: var(--dimension-height-two);
+        opacity: var(--opacity-two);
+        top: var(--dimension-width-two);
+        left: var(--dimension-height-two);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-two),var(--skew-y-two)); */
+    }
+    30%{
+        width: var(--dimension-width-three);
+        height: var(--dimension-height-three);
+        opacity: var(--opacity-three);
+        top: var(--dimension-width-three);
+        left: var(--dimension-height-three);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-three),var(--skew-y-three)); */
+    }
+    40%{
+        width:var(--dimension-width-four);
+        height: var(--dimension-height-four);
+        opacity: var(--opacity-four);
+        top: var(--dimension-width-four);
+        left: var(--dimension-height-four);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-four),var(--skew-y-four)); */
+    }
+    50%{
+        width: var(--dimension-width-five);
+        height: var(--dimension-height-five);
+        opacity: var(--opacity-five);
+        top: var(--dimension-width-five);
+        left: var(--dimension-height-five);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-five),var(--skew-y-five)); */
+    }
+    60%{
+        width: var(--dimension-width-six);
+        height: var(--dimension-height-six);
+        opacity: var(--opacity-six);
+        top: var(--dimension-width-six);
+        left: var(--dimension-height-six);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-six),var(--skew-y-six)); */
+    }
+    70%{
+        width: var(--dimension-width-seven);
+        height: var(--dimension-height-seven);
+        opacity: var(--opacity-seven);
+        top: var(--dimension-width-seven);
+        left: var(--dimension-height-seven);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-seven),var(--skew-y-seven)); */
+    }
+    80%{
+        width:  var(--dimension-width-eight);
+        height: var(--dimension-height-eight);
+        opacity: var(--opacity-eight);
+        top: var(--dimension-width-eight);
+        left: var(--dimension-height-eight);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-eight),var(--skew-y-eight)); */
+    }
+    90%{
+        width: var(--dimension-width-nine);
+        height: var(--dimension-height-nine);
+        opacity: var(--opacity-nine);
+        top: var(--dimension-width-nine);
+        left: var(--dimension-height-nine);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-nine),var(--skew-y-nine)); */
+    }
+    100%{
+        width: var(--dimension-width-ten);
+        height: var(--dimension-height-ten);
+        opacity: var(--opacity-fotenur);
+        top: var(--dimension-width-ten);
+        left: var(--dimension-height-ten);
+        /* transform: translate(var(--position-x),var(--position-y),var(--position-z)) skew(var(--skew-x-ten),var(--skew-y-ten)); */
+    }
+}

@@ -1,0 +1,41 @@
+@media screen and (min-width: 300px){
+    .social-images{
+        position: absolute;
+        top: min(50%,120px);
+        left: 3%;
+        width: max(30%,150px);
+        height:  max(35%,150px);
+        margin: 0;
+    }
+    .social-images ul li{   
+        list-style: none;
+    }
+    .social-images ul li span{
+        margin: 1vw;
+        text-align: center;
+        align-self: center;
+    }
+    .social-images ul li a img{
+        align-self: center; 
+    }
+    .social-images ul li a{
+        color: teal;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .social-images{
+        top: min(20%,200px);
+        left: 3%;
+        width: max(20%,150px);
+        height:  max(20%,150px);
+    }
+}
+@media screen and (min-width: 800px){
+    .social-images{
+        top: max(65%,250px);
+        left: 5%;
+        width: max(5%,150px);
+        height:  max(5%,150px);
+    }   
+}

@@ -1,0 +1,7 @@
+.home-footer{
+    display:grid;
+    grid-template-areas: 
+        'center';
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}

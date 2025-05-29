@@ -1,0 +1,58 @@
+.profile-photo{
+    z-index:3;
+    border-radius: 5px;
+    box-shadow: rgba(241, 69, 178, 0.4) 0px 6px, 
+        rgba(238, 26, 160, 0.3) 0px 12px, 
+        rgba(240, 46, 170, 0.2) 0px 18px, 
+        rgba(240, 46, 170, 0.1) 0px 24px, 
+        rgba(240, 46, 170, 0.05) 0px 30px;
+}
+@media screen and (min-width: 300px){
+    #profile-photo-wrapper{
+        position: absolute;
+        left: 30%;
+        top: 10%;  
+        width: min(50%,30vw);  
+        height: min(50%,30vw);
+    }  
+    .profile-photo{
+        position: absolute;
+        top: 0%;
+        left: var(--position-image-left);
+    }  
+}
+@media screen and (min-width: 800px){
+    #profile-photo-wrapper{
+        position: absolute;
+        left: -10%;
+        top: 0%;  
+        width: min(50%,25vw);  
+        height: min(40%,20vw);  
+    }
+    .profile-photo{
+        position: absolute;
+        top: 0%;
+        left: var(--position-image-left);
+    }
+    #profile-photo-wrapper img{
+        transition: 1s;
+    }
+    #profile-photo-wrapper:hover img:nth-child(3){
+        transform: translate(-50%,30%) rotate(10deg)  scale(1);
+        transition: all 1s ease-in;
+        opacity: 1;
+        z-index: 10;
+    }
+    #profile-photo-wrapper:hover img:nth-child(2){
+        transform: translate(-10%,10%) rotate(25deg) scale(.85);
+        transition: all 1s ease-in;
+        opacity: 0.5;
+        z-index: 9;
+    }
+    #profile-photo-wrapper:hover img:nth-child(1){
+        transform: translate(0%,-20%) rotate(-25deg) scale(.75);
+        transition: all 1s ease-in;
+        opacity: .25;
+        z-index: 8;
+    }
+}

@@ -1,0 +1,60 @@
+@keyframes typing {
+  from {
+    width:calc(100% + 1ch);
+  }
+  to {
+    width: 0ch;
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: var(--cursor-color);
+  }
+  to{ 
+    border-color:transparent;
+  }
+}
+    
+.multiline-typing-pseudo{
+  position:relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-size: min(15px,1.25rem);
+  padding: 3% 3%;
+}
+
+.typing-paragraph-pseudo{
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font: var(--p-typing-color);
+}
+
+.typing-paragraph-pseudo::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  right: -1%;
+  height: calc(100% + 0.1rem);
+  width: calc(100% + 1vw);
+  background-color: var(--about-bg);
+}
+.line::before { 
+  width: var(--pseudo-before-width); 
+  animation: typing calc(var(--pseudo-before-width) * 50ms) steps(var(--pseudo-before-width)) calc(var(--pseudo-before-len) * 50ms) both
+} 
+
+    
+    
+   
+    
+   

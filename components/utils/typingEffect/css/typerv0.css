@@ -1,0 +1,43 @@
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }   
+}
+
+.multiline-typing-hider {
+  position: relative; 
+  line-height: normal;
+  padding: 0;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+
+.typing-paragraph-hider {
+  margin: 3%;
+  padding: 0%;
+  color: var(--p-typing-color);
+  font: var(--p-font-size);
+}
+
+.hiders {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+}
+
+.hiders p {
+  position: relative;
+  clear: both; 
+  margin: 0;
+  float: right;
+  width:0;
+  background: var(--about-bg); /* same as page background */
+  color: var(--about-bg); 
+  animation: typing var(--typing-duration) steps(var(--typing-steps), end);
+  animation-fill-mode: both; 
+  animation-delay: var(--animation-delay);
+}
+  
+
+

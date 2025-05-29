@@ -1,0 +1,155 @@
+.shape-drop{
+    --attr-5: calc(var(--width) * 0.05);
+    --attr-10: calc(var(--width) * 0.1);
+    --attr-15: calc(var(--width) * 0.15);
+    --attr-20: calc(var(--width) * 0.2);
+    --attr-8: calc(var(--width) * 0.08);
+    --attr-16: calc(var(--width) * 0.16);
+    --attr-65: calc(var(--width) * 0.65);
+    position: absolute;
+    height: var(--height);
+    width: var(--width);    
+    padding: 0;
+    margin: 0;   
+    top: var(--top); left: var(--left);
+    background: var(--background-color);
+    border-radius: 41% 68% 67% 92% / 69% 67% 91% 70%;
+    opacity: var(--opacity);
+    border: var(--border-width) solid var(--border-color);
+}
+.shape-drop:hover{
+    transform: scale(1.15);
+    transition: transform  .5s ease-in-out;
+}
+.shape-drop::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #318CFE;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    /* box-shadow: -20px 30px 16px #1B6CFB, -40px 60px 32px #1b6cfb, inset -6px 6px 10px #1B6CFB, inset 2px 6px 10px #1a74e5, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff; */
+    box-shadow: calc( -1 * var(--attr-10)) var(--attr-15) var(--attr-8) var(--bf-bg-cl), calc( -1 * var(--attr-20)) var(--attr-10) var(--attr-16) var(--bf-bg-cl), inset calc( -0.6 * var(--attr-5)) calc( 0.6 * var(--attr-5)) var(--attr-5) var(--bf-bg-cl), inset calc( 0.2 * var(--attr-5)) calc( 0.6 * var(--attr-5)) var(--attr-5) var(--bf-bg-cl), inset var(--attr-10) calc( -1 * var(--attr-10)) calc( 1.1 * var(--attr-10)) white, inset var(--attr-20) calc( -1 * var(--attr-20)) calc( 1.1 * var(--attr-20)) #a8ceff;
+  }
+  
+  .shape-drop::after {
+    content: "";
+    position: absolute;
+    height: var(--attr-20);
+    width: var(--attr-20);
+    background: transparent;    
+    border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+    left: var(--attr-65);
+    top: var(--attr-20);
+    box-shadow: var(--attr-5) var(--attr-5) var(--attr-5) calc( 0.6 * var(--attr-5)) var(--af-bg-cl);
+    opacity: 0.8;
+  }
+
+ .shape-drop_content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1%;
+    gap: 1%;
+    width: 100%;
+    height: 100%;
+}
+.shape-drop_content .drop_title{
+    margin-bottom: 1%;
+    position: absolute;
+    top: 100%;
+    left: 0%;   
+    border-radius: 5px;
+    text-align:center; 
+    align-self:center;
+    align-items:center;
+    font-size: max(15px,1vw);
+    color: rgb(241, 142, 124);
+    padding: 0.5%;
+    transition: all .5s ease-in;
+    opacity: 0;
+}
+.shape-drop_content .drop_title.on-timeline{
+    color: rgb(255,255,255);
+    width: max-content;
+    height: max-content;
+    font-size: max(1.5rem,1.5vw);
+    z-index: 1;
+    opacity:1;
+}
+.about-phase_description{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 3% 1%;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.about-phase_text{
+    width: 100%;
+    height: max(max-content,30%)    ;
+    font-weight: 500;
+    color: rgb(243, 232, 232);
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+.animation-slide-in-lr{
+    display: block;
+    animation: slide-in-lr .5s ease-in;
+}
+.animation-slide-out-lr{
+    animation: slide-out-lr .5s ease-in;
+}
+.about-phase_text.title{
+    font-weight: 700;
+    font-size: min(1rem,16px);
+}
+.about-phase_text.company {
+    font-weight: 500;
+    font-size: min(.8rem,14px);
+}
+.about-phase_text.location {
+    font-weight: 300;
+    font-size: min(.75rem,12px);
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+@keyframes slide-in-lr{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-out-lr{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@media screen and (min-width: 800px) {
+    .shape-drop_content .drop_title{
+        font-size: min(1.1rem,1.1vw);
+    }
+    .shape-drop_content .drop_title.on-timeline{
+        font-size: min(1.3rem,1.3vw);
+    }
+}

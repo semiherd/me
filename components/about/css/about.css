@@ -1,0 +1,109 @@
+:root{
+    --cursor-color: rgb(186, 180, 180);
+    --typing-steps: 50;
+    --blink-frequency: 0.7s;
+    --typing-color:  rgb(96, 69, 91);
+    --container-width: 100%;
+    --typing-iteration: infinite;
+    --typing-direction: alternate;
+    --font-size: 2rem;
+    --about-bg: rgb(225, 221, 221);
+    --p-typing-cursor-color: rgb(186, 180, 180);
+    --p-typing-duration: 5s;
+    --p-typing-steps: 50;
+    --p-blink-frequency: 0.7s;
+    --p-typing-color:  rgb(96, 69, 91);
+    --p-typing-iteration: infinite;
+    --p-typing-direction: alternate;
+    --p-font-size: max(2rem,20px);
+} 
+
+@keyframes slide-down{
+    to { 
+        transform: translateY(0); 
+    }
+}
+@keyframes display-timeline{
+    0%{
+        transform:  scale(0);
+    }
+    100%{
+        transform:  scale(1);
+    }
+}
+@media screen and (min-width: 300px) {
+    section#about{
+        display: flex;  
+        flex-direction: column;
+        background-color: var(--about-bg);
+        overflow-x: hidden;
+       
+    } 
+    section#about #about-left-container{
+        width: 100%;
+        background-color: rgba(228, 224, 224,0.8);
+        background-image: url('../../../assets/photo/bg-3.jpg');
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 100%;
+        background-origin: content-box;
+        background-size: 100% 100%;
+        background-blend-mode: lighten;
+    }
+    section#about #about-right-container{
+        width: 100%;
+    }
+    .about-left-timeline_label{
+        position: relative;
+        top: 1%;
+        left: 3%;
+        margin-top: 1%;
+        animation: slide-down 0.8s ease forwards;
+        animation-delay: 0.7s;
+        border: 5px;
+        background-color: rgb(92, 54, 54);
+        padding: 0.5%;
+        border-radius: 5px;
+        z-index: 10;
+        align-self: center;
+        width: max(200px,30%);
+        transform: translateY(-200%);
+    }
+    .about-left-timeline_label_text{
+        font-size: min(1rem,15px);
+        font-weight: 600;
+        text-align: center;
+        color:rgb(225, 221, 221); 
+    }
+}
+@media screen and (min-width: 800px) {
+    section#about{
+        display: grid;
+        grid-template-areas: 
+            'left right';
+        grid-template-columns: 1fr 1fr;  
+    } 
+    section#about #about-left-container{
+        width: 100%;
+        grid-area: left;
+    }
+    section#about #about-right-container{
+        width: 100%;
+        grid-area: right;
+        
+    } 
+    .container-technology{
+        height: max-content;
+        width: min(100vw,70%);
+    }
+    .about-left-timeline_label{
+        top: 1%;
+        left: 3%;
+        margin-top: 1%;
+        padding: 0.5%;
+        width: max(200px,30%);
+        transform: translateY(-200%);
+    }
+    .about-left-timeline_label_text{
+        font-size: min(1rem,15px);
+    }
+}

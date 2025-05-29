@@ -1,0 +1,31 @@
+span.typing{
+    display: grid;
+    white-space: nowrap; 
+    color: var(--typing-color);
+    font-size: var(--span-font-size);
+    overflow: hidden;
+    height: min-content;
+    word-break: break-all;
+    max-width: max-content;
+    border-right: 0.1em solid var(--cursor-color);
+    animation: blink var(--blink-frequency) steps(1,end) infinite,
+        typing var(--typing-duration) steps(var(--typing-steps))  var(--typing-iteration) var(--typing-direction);
+}
+
+.type span:before {
+  content:" ";
+  display: inline-block;
+}
+
+@keyframes typing {
+    0%,10% { width: 0 }
+    90%,100% { width: 100%  }
+}
+@keyframes blink {
+    0%,100%{
+        border-color: var(--cursor-color);
+    }
+    50% { 
+        border-color: transparent;
+    }
+}

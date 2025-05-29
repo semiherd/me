@@ -1,0 +1,40 @@
+@media screen and (min-width: 300px){
+    .dot-box{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        width: 20%;
+        height: 20%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(20,1fr);
+        gap: 0;
+        z-index:1;
+    }
+    .dot-item{
+        width: min(5px,0.5vw);
+        height: min(5px,0.5vw); 
+        border-radius: 50px;
+        background-color: var(--dot-color);
+    }
+}
+@media screen and (min-width: 800px){
+    .dot-box{
+        position: absolute;
+        top: 35%;
+        left: -8%;
+        width: 20%;
+        height: 15%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(20,1fr);
+        gap: 0;
+        z-index:1;
+    }
+    .dot-item{
+        width: min(3px,0.3vw);
+        height: min(3px,0.3vw); 
+        border-radius: 50px;
+        background-color: var(--dot-color);
+    }
+}

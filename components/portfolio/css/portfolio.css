@@ -1,0 +1,217 @@
+:root{
+    --portfolio-bg: rgb(134, 200, 188);
+}
+@keyframes zIndexImage {
+	0% , 100%{
+		z-index: 1;
+	}
+}
+/* section portfolio as viewport*/
+    section.portfolio{
+        position: relative;
+        background-color: var(--portfolio-bg);
+        width: 100vw;
+        overflow-x: hidden;
+        
+    }
+/* filter-bar */
+    .portfolio-technology{
+        display: flex;
+        flex-direction: row;
+        gap: 2%; 
+        margin: 1% 2%; 
+    }
+    .project-technology{
+        border: 0.5px solid rgb(126, 106, 34);
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-size: min(1rem,2vw);
+        width: fit-content;
+        font-weight: 700;
+        text-align: center;
+        align-self: center; 
+        align-content: center;
+        padding: min(2%,1rem); 
+    }   
+/* projects wrapper*/
+    #portfolio-projects{
+        --project-height: 50vh;
+        --grid-project-margin: 0%;
+        --grid-project-gap: 1%;
+        --height-factor: 1.12;
+        display: grid; 
+        margin: var(--grid-project-margin);
+        gap: var(--grid-project-gap);
+        padding: min(3%,1rem); 
+        height: calc(calc( 1 + var(--projects)) * var(--height-factor) * var(--project-height));  
+        grid-template-rows: repeat(round(var(--projects)),var(--project-height));
+        grid-template-columns: 1fr;
+        align-self: center;  
+        overflow: hidden;
+        background-color: rgba(228, 224, 224,0.8);
+        background-image: url('../../../assets/photo/bg-4.jpg');
+        background-origin: content-box;
+        background-size: 100% 100%;
+        background-blend-mode: lighten;
+    }
+/* project item*/
+    .project{
+        position: relative;
+        border: 0.5px solid rgb(136, 134, 134);
+        border-radius: 5px;
+        padding: 0;
+        margin: 0%;
+        overflow: hidden;
+        height: var(--project-height);
+        align-self: center;
+    }
+    .project img{
+        transition: all 200ms ease-in-out;
+    }
+    .project:hover .project-technology-icons >img{
+        transform: scale(1);
+    }
+    #projects:hover .project:not(:hover){
+        opacity: 0.6;	
+    } 
+    .project:hover > img {
+        transform: scale(1.5);
+    }
+/* technology bar */
+    .project-technology-icons{
+        position: absolute;
+        left:0;
+        max-height: 20%;
+        bottom: 0%;
+        width: 100%;
+        background-color: rgb(0,0,0);
+        text-align: center;
+    }
+    .project-technology-icons >img{
+        width: max(10%,3vw);
+    }
+
+/* title */
+    .project-title{
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        width: 100%;
+        height: max-content; 
+    }
+    .project-title h1{
+        transition: all 300ms ease-in-out;
+        align-items: center;;
+        align-self: center;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: max(2rem,3vw);
+        line-height: 1;
+        color: rgb(74, 69, 69);
+    }
+    .project:hover .project-title h1{
+        transform: translateY(-100%);
+        font-size: max(0.5%,2vw);
+        height: max-content;
+        padding: min(1%,0.5vw);
+        background-color: rgba(255,255,255,0.6);
+    }  
+/* links as anchor tags*/
+    .project-links{
+        position: absolute;
+        left: 0%;
+        top: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3%;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        text-align: center;    
+    }
+    .project-link-button{
+        position: relative;
+        color: #441559;
+        background-color: rgb(224, 218, 218);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: max(1rem,1vw);
+        font-weight: 500;
+        margin: 0 1%;
+        max-width: 35%; 
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%; 
+        letter-spacing: 0;
+    }
+    .project-link-button:hover{
+        border:none;
+        background-color: transparent;
+        letter-spacing: 12px;
+    }
+    .project-link-button::after,
+    .project-link-button::before {
+        display: block;
+        position: relative;
+        bottom: 0px;
+        content: "";
+        width: 0;
+        margin: 0 auto;
+        backface-visibility: hidden;
+        transition: all 300ms ease-in-out;
+    }
+    .project-link-button:hover:after,
+    .project-link-button:hover:before {
+    backface-visibility: hidden;
+    transition: width 300ms ease-in-out;
+    width: 70%;
+    border: 1px solid rgb(236, 91, 55);
+    align-self: center;
+    }
+    .project-link-button:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 70%;
+    }
+/* project-title*/
+    .projects-title{
+        text-align: center;
+        padding: 3%;
+    }
+/* responsiveness */
+@media screen and (min-width: 600px) {
+
+    #portfolio-projects{
+        --height-factor: 1.1;
+        --item-per-row: 2; 
+        height: calc(calc(var(--projects) + 1) * var(--height-factor) *  1/var(--item-per-row) * var(--project-height)); 
+        justify-content: center;
+        align-self: center;
+        grid-template-rows: repeat(calc(round(var(--projects) + 1 ) *  1/var(--item-per-row)  ),1fr);
+        grid-template-columns: repeat(var(--item-per-row),1fr);
+    } 
+    
+} 
+@media screen and (min-width: 800px) {
+    #portfolio-projects{
+        --height-factor: 1.35;
+        --item-per-row: 3;
+        justify-content: center;
+        align-self: center;
+        grid-template-rows: repeat(calc(round(var(--projects) + 1 ) *  1/var(--item-per-row)  ),1fr);
+        grid-template-columns: repeat(var(--item-per-row),1fr);
+    } 
+}
+@media screen and (min-width: 1000px) {
+    #portfolio-projects{
+        --item-per-row: 4;
+        justify-content: center;
+        align-self: center;
+        grid-template-rows: repeat(calc(round(var(--projects) + 1 ) *  1/var(--item-per-row)  ),1fr);
+        grid-template-columns: repeat(var(--item-per-row),1fr);
+    } 
+}
+
