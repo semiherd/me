@@ -1,5 +1,5 @@
 /* create filter-bar with tech used tabs */
-/*
+
 function createArrows(){
     const lefticon= createDOMElement({ type: 'div',attributes: { class : "icon" }});
     const righticon= createDOMElement({ type: 'div',attributes: { class : "icon" }});
@@ -32,4 +32,4 @@ function createTechFilterBar(techList){
     barContainer.append(righticon);
     return barContainer;
 }
-*/
+

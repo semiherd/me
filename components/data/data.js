@@ -27,7 +27,7 @@ const projects=[
         images: { cover: 'assets/project/typing-effect.png', video:'' }
     },
     { 
-        id: '12',    
+        id: '4',    
         label: 'composition-inheritance',
         title: 'Composition vs Inheritance', 
         description: 'Comparision of composition and inheritance', 
@@ -36,7 +36,7 @@ const projects=[
         images: { cover: 'assets/photo/bg-1.jpg', video:'' }
     },
     { 
-        id: '11',    
+        id: '5',    
         label: 'custom-react-hook',
         title: 'Custom React Hook', 
         description: 'Custom React Hook example for data fetching', 
@@ -45,7 +45,7 @@ const projects=[
         images: { cover: 'assets/photo/bg-1.jpg', video:'' }
     },
     { 
-        id: '12',    
+        id: '6',    
         label: 'spa-no-framework',
         title: 'Custom SPA', 
         description: 'Custom singe page application without any framework', 
@@ -54,7 +54,7 @@ const projects=[
         images: { cover: 'assets/photo/bg-1.jpg', video:'' }
     },
     { 
-        id: '4', 
+        id: '7', 
         label: 'search-page',
         title: 'Transportation Search Page', 
         description: 'Search Page of transportation which displays multiple options between locations', 
@@ -63,7 +63,7 @@ const projects=[
         images: { cover: 'assets/project/transportation.png', video:'' }
     },
     { 
-        id: '5', 
+        id: '8', 
         label: 'react-dropdown',
         title: 'Multiselect Dropdown Component', 
         description: 'Multiselection dropdown component on React', 
@@ -72,7 +72,7 @@ const projects=[
         images: { cover: 'assets/photo/bg-1.jpg', video:'' }
     },
     { 
-        id: '6', 
+        id: '9', 
         label: 'range-slider',
         title: 'Animated Range Slider', 
         description: 'Range slider component on React Native', 
@@ -81,7 +81,7 @@ const projects=[
         images: { cover: 'assets/project/range-slider.png', video:'' }
     },
     { 
-        id: '7', 
+        id: '10', 
         label: 'animated-synchorized-list',
         title: 'Animated Synchorized List on React Native', 
         description: 'test project seven', 
@@ -90,7 +90,7 @@ const projects=[
         images: { cover: 'assets/photo/bg-1.jpg', video:'' }
     },
     { 
-        id: '8', 
+        id: '11', 
         label: 'scrollable-header',
         title: 'Header Component', 
         description: 'Animated Scrollable Header on React Native', 
@@ -99,7 +99,7 @@ const projects=[
         images: { cover: 'assets/project/scrollable-header.png', video:'' }
     },
     { 
-        id: '9',    
+        id: '12',    
         label: 'calender-component',
         title: 'Calendar Component on React Native', 
         description: 'Multi selection calendar component with dynamic disabled days on React Native', 
@@ -108,7 +108,7 @@ const projects=[
         images: { cover: 'assets/project/calendar-rn.png', video:'' }
     },
     { 
-        id: '10',    
+        id: '13',    
         label: 'search-page',
         title: 'Basic Search Page of countries', 
         description: 'Search Countries Page with basic features', 
