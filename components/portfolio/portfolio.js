@@ -10,6 +10,7 @@ function createOptions(data){
     });
     return { techOptions: optionsList };
 }
+/*
 function createTechFilterBar(techList){
     const barContainer= createDOMElement({
         type: 'div',
@@ -22,7 +23,7 @@ function createTechFilterBar(techList){
     barContainer.append(righticon);
     return barContainer;
 }
-
+*/
 function renderFilterScrollbar(){
     // const filterBar= createTechFilterBar(techIcons);
     // filterByTechHandler(filterBar);
