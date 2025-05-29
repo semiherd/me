@@ -79,8 +79,6 @@ function renderPortfolioProjects(){
         }
        
     }
-
-    console.log(containerProjects)
     
     if(!isElmIdOn(containerProjects,'portfolio-projects_title_wrapper')){
         // projects-title-box
@@ -105,7 +103,6 @@ function renderPortfolioProjects(){
         updateProjectElms({parent: containerProjects,data:projectsOn});
         
     }
-    console.log('containerProjects:',containerProjects)
     return containerProjects;
 }
 

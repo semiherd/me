@@ -48,7 +48,6 @@ function createProjectSubContainer({parentAtt,elementsFn}){
     });
     const element= elementsFn();
     if(Array.isArray(element)){
-        console.log('element',element);
         element.forEach(item => parentElm.append(item));
     }else{
         parentElm.appendChild(element)

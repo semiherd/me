@@ -118,11 +118,8 @@ function createShapes(){
 function renderFooter(parent){
     const obj= FooterContainer({id: 'home-footer'});
     const centerElm= obj.createWrapper({id:'home-footer-center',type:'div',className:'home-footer_center'})
-    const canvasElm= createCanvasContent(obj);
     createCenterContent(centerElm);
-    let dataurl = canvasElm.toDataURL();
-    console.log(dataurl);
-    centerElm.style.background='url('+dataurl+')'
+    
     //parent.append(canvasElm);  
     parent.append(centerElm);  
 }   
