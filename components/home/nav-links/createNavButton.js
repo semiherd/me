@@ -1,3 +1,4 @@
+/*
 function createNavButton({parent,id,label,renderFn}){
     const navBut= createDOMElement({
         type: 'button',
@@ -20,3 +21,4 @@ function showNavArrow(container){
 function listenNavButton({elm,cb}){
     elm.addEventListener('click',cb);
 }
+*/
