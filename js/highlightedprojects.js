@@ -1,4 +1,3 @@
-import { images,urls } from "./urls.js";
 export const highlightedProjects = [
   {
     id: 1,
