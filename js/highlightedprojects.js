@@ -18,7 +18,7 @@ export const highlightedProjects = [
     title: "3D Design",
     type: "desktop",
     description: "Interactive 3D designs on any web apps",
-    image: "./js/images/three-js-booklet.png"
+    image: "./js/images/threejs-booklet.png"
   },
   {
     id: 4,
@@ -39,6 +39,6 @@ export const highlightedProjects = [
     title: "Cloud Solutions in supply chain industry",
     type: "desktop",
     description: "Full-Stack Dev and DevOps Solutions with Azure on your cloud architecture",
-    image: "./js/images/azure.webp"
+    image: "./js/images/azure.png"
   }
 ];
