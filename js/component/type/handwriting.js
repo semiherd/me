@@ -1,5 +1,5 @@
 
-import opentype from `${import.meta.env.BASE_URL}vendor/opentype.module.js`;
+import opentype from `${import.meta.env.BASEURL}/vendor/opentype.module.js`;
 export async function drawHandwriting(
   element,
   text,
