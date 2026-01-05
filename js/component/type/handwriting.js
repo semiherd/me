@@ -1,4 +1,5 @@
-import opentype from "http://127.0.0.1:5504/public/vendor/opentype.module.js";
+
+import opentype from `${import.meta.env.BASE_URL}vendor/opentype.module.js`;
 export async function drawHandwriting(
   element,
   text,
