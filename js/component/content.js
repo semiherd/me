@@ -22,7 +22,7 @@ async function createMainContent(container){
     
     container.innerHTML = `
         <div class="home-image">
-                <img src="../../images/semih.jpeg" alt="Semih Erdoğan" />
+                <img src="../images/semih.jpeg" alt="Semih Erdoğan" />
             </div>
         <div class="home-text">
             <div id="handwrite-mount" class="home-name handwrite-container"></div>
