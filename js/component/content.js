@@ -2,7 +2,7 @@ import { highlightedProjects } from "../highlightedprojects.js"
 import { createDOMElement } from "../util/createDOMElm.js";
 import { createSlidingItems } from "./sliding/v1/index.js";
 import { drawHandwriting } from "../component/type/handwriting.js";
-import semih from "../images/semih.jpeg";
+
 export function createContent(containerId) {
     const container = document.getElementById(containerId);
     const contentContainer= createDOMElement({ type: 'div', attributes: { class: 'content-section' }});
@@ -20,7 +20,7 @@ async function createMainContent(container){
     
     container.innerHTML = `
         <div class="home-image">
-                <img src="${semih}" alt="Semih Erdoğan" />
+                <img src="../js/images/semih.jpeg" alt="Semih Erdoğan" />
             </div>
         <div class="home-text">
             <div id="handwrite-mount" class="home-name handwrite-container"></div>
