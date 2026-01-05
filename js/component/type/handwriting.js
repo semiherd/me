@@ -5,9 +5,7 @@ let opentypePromise;
  */
 async function loadOpenType() {
   if (!opentypePromise) {
-    opentypePromise = import(
-      `${import.meta.env.BASE_URL}vendor/opentype.module.js`
-    ).then(m => m.default ?? m);
+    opentypePromise = import(`./vendor/opentype.module.js`).then(m => m.default ?? m);
   }
   return opentypePromise;
 }
