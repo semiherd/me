@@ -4,41 +4,41 @@ export const highlightedProjects = [
     title: "Modern Websites for Businesses",
     type: "desktop",
     description: "Modern Websites with Angular and React",
-    image: "./js/images/angular-website.png"
+    image: "./images/angular-website.png"
   },
   {
     id: 2,
     title: "Digital Tools for Manufacturing Processes",
     type: "desktop",
     description: "IoT-driven manufacturing insights on mobile and web apps",
-    image: "./js/images/production-reporting.png"
+    image: "./images/production-reporting.png"
   },
   {
     id: 3,
     title: "3D Design",
     type: "desktop",
     description: "Interactive 3D designs on any web apps",
-    image: "./js/images/threejs-booklet.png"
+    image: "./images/threejs-booklet.png"
   },
   {
     id: 4,
     title: "Interactive Animated Design",
     type: "mobile",
     description: "Interactive animated design on apps",
-    image: "./js/images/three-js-landing.png"
+    image: "./images/three-js-landing.png"
   },
   {
     id: 5,
     title: "Cloud Solutions in manufacturing industry",
     type: "desktop",
     description: "Full-stack Dev and DevOps Solutions with AWS CDK and AWS SDK on your cloud architecture",
-    image: "./js/images/aws_cdk.webp"
+    image: "./images/aws_cdk.webp"
   },
   {
     id: 5,
     title: "Cloud Solutions in supply chain industry",
     type: "desktop",
     description: "Full-Stack Dev and DevOps Solutions with Azure on your cloud architecture",
-    image: "./js/images/azure.png"
+    image: "./images/azure.png"
   }
 ];
