@@ -2,7 +2,7 @@ import { highlightedProjects } from "../highlightedprojects.js"
 import { createDOMElement } from "../util/createDOMElm.js";
 import { createSlidingItems } from "./sliding/v1/index.js";
 import { drawHandwriting } from "../component/type/handwriting.js";
-import { urls } from "../urls.js";
+import { images, urls } from "../urls.js";
 
 
 export function createContent(containerId) {
@@ -22,8 +22,8 @@ async function createMainContent(container){
     
     container.innerHTML = `
         <div class="home-image">
-            <img src="http://127.0.0.1:5504/public/images/semih.jpeg" alt="Semih Erdoğan" />
-        </div>
+                <img src="${images.semihPhoto}" alt="Semih Erdoğan" />
+            </div>
         <div class="home-text">
             <div id="handwrite-mount" class="home-name handwrite-container"></div>
             <p class="home-title">
