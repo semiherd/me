@@ -2,8 +2,6 @@ import { highlightedProjects } from "../highlightedprojects.js"
 import { createDOMElement } from "../util/createDOMElm.js";
 import { createSlidingItems } from "./sliding/v1/index.js";
 import { drawHandwriting } from "../component/type/handwriting.js";
-import { images, urls } from "../urls.js";
-
 
 export function createContent(containerId) {
     const container = document.getElementById(containerId);
@@ -162,7 +160,7 @@ async function createMainContent(container){
         targetScroll = window.scrollY;
     });
     const options={
-        fontUrl: urls.fonts.ItallianoRegular,
+        fontUrl: "../fonts/Italianno/Italianno-Regular.ttf" ,
         fontSize: 120,
         stroke: "#0B3C5D",
         // stroke: "#242f31ff",
