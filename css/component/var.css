@@ -1,0 +1,6 @@
+:root{
+    --footer-bg: linear-gradient(180deg, rgba(0,180,170,0.65), rgba(25,140,220,0.65));
+    --nav-item-color: rgb(44, 77, 77);
+    --navbar-bg-color:  linear-gradient(180deg, rgba(75, 41, 97, 0.75), rgba(25, 118, 210, 0.75));
+     --navbar-height: 5vh;
+}

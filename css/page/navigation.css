@@ -1,0 +1,131 @@
+@import url("../../js/component/dropdown/dropdown.css");
+@import url("../component/clickout.css");
+@import url("../component/onScroll.css");
+@import url("../component//var.css");
+@import url("../component//menu-icon.css");
+
+nav.navbar {
+    --navbar-height: 5vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.2rem;
+    background: var(--background-color,var(--navbar-bg-color));
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+/* Navbar visible & scroll behaviors */
+nav.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.navigation-item-link{
+    text-decoration: none;
+}
+.menu-icon_hidden{
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+/* ===MOBILE DEVICE=== */
+@media only screen and (max-width: 600px){
+    .navigation-items { 
+        transform: translate(200%,0);
+        transition: all .5s ease-in-out;
+        flex-direction: column;
+        position: fixed;
+        top: var( --navbar-height);
+        right: 0;
+        visibility: visible;
+        padding-top: min(5px,4%);
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        opacity: 1;
+        pointer-events: none;
+        width: max(100%,100vw);
+        max-height: 80vh;
+        height: max(80%,calc(var(--items))*2vh); 
+        gap: 1rem;
+    }
+    .navigation-items_open{
+        --bg-color: linear-gradient(90deg, rgba(0, 180, 170, 0.65), rgba(25, 140, 220, 0.65));
+        background: var(--bg-color);
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0,0);
+        pointer-events: auto;
+        padding: min(10px,15%) min(5px,5%);
+    }
+    .navigation-item:hover{
+        background-color: rgb(12, 245, 245);
+        border-radius: 5px;
+        color: teal;
+        padding: min(5px,5%);
+        transform: scale(1.15);
+        transition: all .3s ease-in-out;    
+    }
+}
+/* ===TABLET DEVICE=== */
+@media only screen and (min-width: 600px){
+    
+    .navigation-items{
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1vw;
+    }
+    .navigation-item-link{
+        color: var(--nav-item-color);
+    }
+    .navigation-item{
+        padding: max(3px,3%);
+        transition: all .3s ease-in-out;
+    }
+    .navigation-item-link:hover::after {
+        width: 70%;
+    }
+    .navigation-item-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: max(2px,5%);
+        background: linear-gradient(90deg, #00bfa5, #2f0b82);
+        transition: all 0.35s ease;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+}
+/* ===LAPTOP DEVICE=== */
+@media only screen and (min-width: 800px){
+    
+}
+@media only screen and (min-width: 960px){
+    .navigation-item:hover{
+        transform: translateY(-2px);
+    }
+    .navigation-item:hover{
+        color: rgb(247, 248, 248)
+    }
+}
+/* ===DESKTOP DEVICE=== */
+@media only screen and (min-width: 1200px){}

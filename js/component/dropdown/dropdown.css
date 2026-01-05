@@ -1,0 +1,137 @@
+@import url("../../../css/page/animation.css");
+
+/* .dropdown-link:focus-visible {
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.dropdown-hover {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px) scale(0.97);
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.88) 0%,
+      rgba(240, 248, 255, 0.82) 100%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(0, 200, 255, 0.12),
+      transparent 60%
+    );
+  border-radius: 10px;
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.12),
+    0 0 12px rgba(0, 200, 255, 0.1);
+  padding: 0.8rem 1rem;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease box-shadow 0.4s ease background-position 0.6s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  min-width: 180px;
+  z-index: 999;
+  transform-origin: top center;
+  background-size: 200% 200%;
+  background-position: 50% 0%;
+} */
+/* .dropdown-hover:hover {
+  background-position: 80% 30%;
+}
+
+.dropdown-hover.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+  pointer-events: auto;
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(0, 180, 255, 0.15); /* glowing halo when active 
+}
+
+
+.dropdown-hover.drop-up {
+  top: auto;
+  bottom: 100%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) translateY(-10px) scale(0.97);
+}
+
+.dropdown-hover.active.drop-up {
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.dropdown-hover.active:not(.drop-up) .dropdown-link {
+  animation: fadeSlideInDown 0.35s forwards;
+}
+
+
+.dropdown-hover.active.drop-up .dropdown-link {
+  animation: fadeSlideInUp 0.35s forwards;
+} */
+
+
+/* .dropdown-link {
+  color: #036564;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  opacity: 1;
+  transition: background 0.25s ease, color 0.25s ease;
+  white-space: nowrap;
+}
+
+.dropdown-link:hover, .dropdown-link:focus-visible {
+  background: rgba(0, 150, 136, 0.1);
+  color: #004d40;
+}
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 77, 97, 0.9);
+  border-left: 2px solid #00bcd4;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.3rem;
+  transition: all 0.3s ease;
+}
+.dropdown.active {
+  display: flex;
+  animation: dropdownFade 0.3s ease forwards;
+} */
+/* 📱 Responsive Layout */
+@media (max-width: 700px) {
+  /* .dropdown-hover {
+      position: absolute;
+      top: 0;
+      right:0;
+      width: 100%;
+      height: 100vh;
+      background: transparent;
+      box-shadow: none;
+      padding-left: 1rem;
+      margin: 0;
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
+      backdrop-filter: none;
+  }
+
+  .dropdown-link {
+      color: rgba(255, 255, 255, 0.9);
+      padding: 0.25rem 0;
+      opacity: 1;
+      transform: none;
+      animation: none;
+  }
+
+  .dropdown-link:hover {
+      color: #b2ebf2;
+      background: transparent;
+  } */
+}

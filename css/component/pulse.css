@@ -1,0 +1,13 @@
+.pulse{
+    --border-radius: var(--border-radius,0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: var(--border-radius)px;
+    padding: max(.5%,.5rem);
+}
+.pulse:hover {
+    --pulse-scale: var(var(--pulse-scale,0);
+    --color-on-hover: var(--color-on-hover,transparent);
+    transform: scale(var(--pulse-scale)));
+    background: var(--color-on-hover);
+    box-shadow: 0 0 10px var(--color-on-hover);
+}

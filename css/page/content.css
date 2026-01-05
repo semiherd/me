@@ -1,0 +1,30 @@
+@import url("../component/sliding-card.css");
+@import url("../component/sliding.css");
+@import url("../component/info-section.css");
+@import url("../component/photo.css");
+@import url("./animation.css");
+@import url("./sections.css");
+
+.main{
+    position:relative; 
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    padding:0;
+    width: 100%;
+    justify-content: center;
+}
+
+.light-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0.6;
+  filter: blur(60px);
+  transition: background 0.2s ease;
+  z-index: 0;
+}
+
+

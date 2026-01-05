@@ -1,0 +1,16 @@
+@import url("./css/page/footer.css");
+@import url("./css/page/navigation.css");
+@import url("./css/page/content.css");
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+#app{
+    position: relative;
+    width: 100vw;
+    height: auto;
+}

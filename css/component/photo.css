@@ -1,0 +1,57 @@
+.home-image {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.home-image img {
+    position: relative;
+    z-index:1; 
+    width: 25vw;
+    max-width: 300px;
+    border-radius: 10%;
+    border: 3px solid rgba(0,150,200,0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;   
+}
+.home-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+.home-image img{
+    transition: 
+        opacity 0.4s ease-out,
+        transform 0.4s ease-out, 
+        box-shadow 0.5s ease;
+    transform-origin: center;
+    will-change: transform, opacity;
+}
+.home-image::after {
+  content: "";
+  position: absolute;
+  inset: -6%;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  filter: blur(60px);
+  z-index: 0;
+  transition: background 0.2s ease;
+
+  /* defaults if JS hasn't run yet */
+  --glow-x: 50%;
+  --glow-y: 50%;
+  --glow-a: 0.30;
+
+  background:
+    radial-gradient(
+      circle at var(--glow-x) var(--glow-y),
+      rgba(0, 200, 255, var(--glow-a)),
+      rgba(0, 150, 200, 0) 70%
+    );
+}
+@media only screen and (max-width: 1024px) {
+  .home-image img {
+    width: 30vw;
+  }
+}

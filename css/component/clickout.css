@@ -1,0 +1,107 @@
+.overlay {
+    --items: 0;
+    --blur: calc(4px + var(--items)*.5px);
+    --alpha: calc(.45 + var(--items)*.02); 
+    --nav-color-top: 31,81,255;
+    --nav-color-bottom: 0,255,255;
+    --tint: 0,0,0;
+    --tint-alpha: 0;
+
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(var(--nav-color-top), var(--alpha)) 0%,
+        rgba(var(--nav-color-bottom), calc(var(--alpha) * 0.8)) 100%
+    );        
+    opacity: 0;
+    pointer-events: none;
+    z-index: 998;
+    transition:
+        opacity 0.4s ease,
+        backdrop-filter 0.45s ease,
+        background 0.6s ease,
+        --nav-color-top 0.6s ease,
+        --nav-color-bottom 0.6s ease,
+        --alpha 0.4s ease;
+    backdrop-filter: blur(var(--blur)) saturate(140%);
+    -webkit-backdrop-filter: blur(var(--blur)) saturate(140%);
+    will-change: opacity, backdrop-filter, background;
+}
+
+/* === Active (visible) state === */
+.overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* === Optional modifier for glass gradient effect === */
+.overlay_glass {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 60, 70, var(--alpha)) 0%,
+    rgba(0, 255, 255, calc(var(--alpha)*.5)) 100%
+  );
+}
+
+/* ============================================================
+   ACCESSIBILITY: REDUCED MOTION SUPPORT
+   ============================================================ */
+
+/* If the user prefers reduced motion, disable transitions. */
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    transition: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* If the user is fine with motion, re-enable modern transitions. */
+@media (prefers-reduced-motion: no-preference) {
+  .overlay {
+    transition: opacity 0.35s ease, backdrop-filter 0.35s ease, background .35s ease;
+  }
+}
+
+/* ============================================================
+   THEME ADAPTATION: DARK / LIGHT MODE
+   ============================================================ */
+
+/* Default assumed to be dark — adjust for light schemes */
+@media (prefers-color-scheme: light) {
+  .overlay {
+    --nav-color-top: rgb(180,230,255);
+    --nav-color-bottom: rgb(0,180,255);
+  }
+  .nav-overlay_glass {
+    background: linear-gradient(
+      180deg,
+      rgba(200, 255, 255, var(--alpha)) 0%,
+      rgba(180, 220, 255, calc(var(--alpha)*.5)) 100%
+    );
+  }
+}
+
+/* Dark mode enhances contrast */
+@media (prefers-color-scheme: dark) {
+  .overlay {
+    --nav-color-top: rgb(0,100,120);
+    --nav-color-bottom: rgb(0,255,255);
+  }
+  .overlay_glass {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 80, 90, var(--alpha)) 0%,
+      rgba(0, 200, 255, calc(var(--alpha)*.5)) 100%
+    );
+  }
+}
+
+/* ============================================================
+   PERFORMANCE TWEAKS
+   ============================================================ */
+.overlay {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
