@@ -20,8 +20,8 @@ async function createMainContent(container){
     
     container.innerHTML = `
         <div class="home-image">
-                <img src="../js/images/semih.jpeg" alt="Semih Erdoğan" />
-            </div>
+            img src="../../js/images/semih.jpeg" alt="Semih Erdoğan" />
+        </div>
         <div class="home-text">
             <div id="handwrite-mount" class="home-name handwrite-container"></div>
             <p class="home-title">
@@ -159,19 +159,19 @@ async function createMainContent(container){
     window.addEventListener("scroll", () => {
         targetScroll = window.scrollY;
     });
-    const options={
-        fontUrl: "../fonts/Italianno/Italianno-Regular.ttf" ,
-        fontSize: 120,
-        stroke: "#0B3C5D",
-        // stroke: "#242f31ff",
-        strokeWidth: 1.5,
-        fillColor: "#03312E",
-        speed: 0.05,
-        letterSpacing: 2,
-        loop: false, 
-    }
-    const handwriteMount = container.querySelector("#handwrite-mount");
-    await drawHandwriting(handwriteMount, "Semih Erdoğan", options);
+    // const options={
+    //     fontUrl: "../fonts/Italianno/Italianno-Regular.ttf" ,
+    //     fontSize: 120,
+    //     stroke: "#0B3C5D",
+    //     // stroke: "#242f31ff",
+    //     strokeWidth: 1.5,
+    //     fillColor: "#03312E",
+    //     speed: 0.05,
+    //     letterSpacing: 2,
+    //     loop: false, 
+    // }
+    // const handwriteMount = container.querySelector("#handwrite-mount");
+    // await drawHandwriting(handwriteMount, "Semih Erdoğan", options);
 
     animateCenterParallax();
 
